@@ -27,9 +27,9 @@
 <section id="home" class="hero">
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="eyebrow">USA — BY APPOINTMENT</p>
-    <h1>Ink Your Story.<br><span>Wear Your Meaning.</span></h1>
-    <p class="hero-copy">Meaningful fine-line pieces, powerful realism, mythology, black & grey, floral, symbolic and custom tattoo artistry designed around your vision.</p>
+    <p class="eyebrow" id="hero-location">USA — BY APPOINTMENT</p>
+    <h1 id="hero-slogan">Ink Your Story. Wear Your Meaning.</h1>
+    <p class="hero-copy" id="hero-copy">Meaningful fine-line pieces, powerful realism, mythology, black & grey, floral, symbolic and custom tattoo artistry designed around your vision.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#booking">Book a Tattoo</a>
       <a class="btn btn-outline" href="#styles">View Tattoo Styles</a>
@@ -75,8 +75,8 @@
   <div class="split">
     <div>
       <p class="eyebrow">NATIONWIDE HOME SERVICE</p>
-      <h2>Your space. Your story. Your appointment.</h2>
-      <p>Home-service requests are available nationwide by appointment. A $300 service/travel fee applies in addition to the tattoo price.</p>
+      <h2 id="home-title">Your space. Your story. Your appointment.</h2>
+      <p id="home-copy">Home-service requests are available nationwide by appointment. A $300 service/travel fee applies in addition to the tattoo price.</p>
       <a class="btn btn-dark" href="#booking">Request Home Service</a>
     </div>
     <div class="policy-box">
@@ -95,10 +95,10 @@
   <div class="split">
     <div>
       <p class="eyebrow">ABOUT PINK CINDY TATTOO</p>
-      <h2>Art with intention.</h2>
+      <h2 id="about-title">Art with intention.</h2>
     </div>
     <div>
-      <p>Pink Cindy Tattoo creates custom artwork around each customer's individual story and vision — from delicate fine-line pieces to powerful realism, mythology, symbolic and dark alternative work.</p>
+      <p id="about-copy">Pink Cindy Tattoo creates custom artwork around each customer's individual story and vision — from delicate fine-line pieces to powerful realism, mythology, symbolic and dark alternative work.</p>
       <p class="muted">Appointments are available Monday through Saturday, 8:00 AM–7:00 PM. All appointments must be confirmed before a customer visits or home-service travel is arranged.</p>
     </div>
   </div>
@@ -163,12 +163,12 @@
   </div>
   <div class="contact-actions">
     <a class="btn btn-primary" href="https://wa.me/17423808100" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn btn-outline-dark" href="https://www.tiktok.com/@pinkxytattoo" target="_blank" rel="noopener">TikTok</a>
+    <a class="btn btn-outline-dark" data-tiktok href="https://www.tiktok.com/@pinkxytattoo" target="_blank" rel="noopener">TikTok</a>
   </div>
   <div class="contact-details">
-    <span>WhatsApp: +1 742 380 8100</span>
-    <span>Signal: +1 732 925 9624</span>
-    <span>USA — By Appointment</span>
+    <span data-whatsapp>WhatsApp: +1 742 380 8100</span>
+    <span data-signal>Signal: +1 732 925 9624</span>
+    <span data-location>USA — By Appointment</span>
     <span>Mon–Sat: 8:00 AM – 7:00 PM</span>
   </div>
 </section>
@@ -179,7 +179,6 @@
   <p>© <span id="year"></span> Pink Cindy Tattoo. Ink Your Story. Wear Your Meaning.</p>
   <a href="admin.html">Admin</a>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="app.js"></script>
 </body>
 </html>
