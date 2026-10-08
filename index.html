@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pink Cindy Tattoo | Ink Your Story. Wear Your Meaning.</title>
+  <meta name="description" content="Pink Cindy Tattoo — custom tattoo artistry throughout the USA by appointment.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home">
+    <img src="assets/pink-cindy-logo.png" alt="Pink Cindy Tattoo logo">
+  </a>
+  <button class="menu-toggle" aria-label="Open menu">☰</button>
+  <nav class="nav">
+    <a href="#styles">Styles</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#about">About</a>
+    <a href="#policies">Policies</a>
+    <a class="nav-cta" href="#booking">Book a Tattoo</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">USA — BY APPOINTMENT</p>
+    <h1>Ink Your Story.<br><span>Wear Your Meaning.</span></h1>
+    <p class="hero-copy">Meaningful fine-line pieces, powerful realism, mythology, black & grey, floral, symbolic and custom tattoo artistry designed around your vision.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#booking">Book a Tattoo</a>
+      <a class="btn btn-outline" href="#styles">View Tattoo Styles</a>
+    </div>
+  </div>
+</section>
+
+<section class="trust-strip">
+  <div><strong>USA</strong><span>Nationwide by appointment</span></div>
+  <div><strong>MON–SAT</strong><span>8:00 AM – 7:00 PM</span></div>
+  <div><strong>CUSTOM</strong><span>Designed for your story</span></div>
+</section>
+
+<section id="styles" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">EXPLORE THE ART</p>
+    <h2>Tattoo Styles</h2>
+    <p>Choose a style to explore. These categories are designed to become fully editable from your admin dashboard.</p>
+  </div>
+  <div id="style-grid" class="card-grid"></div>
+</section>
+
+<section id="portfolio" class="section section-dark">
+  <div class="section-heading">
+    <p class="eyebrow">THE PORTFOLIO</p>
+    <h2>Selected Tattoo Work</h2>
+    <p>Sample portfolio artwork is shown here initially. You will be able to replace, add and remove images from the dashboard.</p>
+  </div>
+  <div id="portfolio-grid" class="portfolio-grid"></div>
+</section>
+
+<section id="pricing" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">CLEAR & FLEXIBLE</p>
+    <h2>Starting Prices</h2>
+    <p>Final pricing depends on size, placement, complexity, detail, session time and custom-design requirements.</p>
+  </div>
+  <div id="pricing-grid" class="price-grid"></div>
+  <div class="notice">Home service carries an additional <strong>$300 service/travel fee</strong>. See the Home Service section for requirements.</div>
+</section>
+
+<section id="home-service" class="section section-pink">
+  <div class="split">
+    <div>
+      <p class="eyebrow">NATIONWIDE HOME SERVICE</p>
+      <h2>Your space. Your story. Your appointment.</h2>
+      <p>Home-service requests are available nationwide by appointment. A $300 service/travel fee applies in addition to the tattoo price.</p>
+      <a class="btn btn-dark" href="#booking">Request Home Service</a>
+    </div>
+    <div class="policy-box">
+      <h3>Home-service requirements</h3>
+      <ul>
+        <li>50% of the tattoo price is required before confirmation.</li>
+        <li>The $300 service/travel fee must be paid before travel is arranged.</li>
+        <li>Nationwide travel is arranged by flight only.</li>
+        <li>Remaining tattoo balance follows the agreed appointment terms.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="split">
+    <div>
+      <p class="eyebrow">ABOUT PINK CINDY TATTOO</p>
+      <h2>Art with intention.</h2>
+    </div>
+    <div>
+      <p>Pink Cindy Tattoo creates custom artwork around each customer's individual story and vision — from delicate fine-line pieces to powerful realism, mythology, symbolic and dark alternative work.</p>
+      <p class="muted">Appointments are available Monday through Saturday, 8:00 AM–7:00 PM. All appointments must be confirmed before a customer visits or home-service travel is arranged.</p>
+    </div>
+  </div>
+</section>
+
+<section id="booking" class="section section-dark">
+  <div class="section-heading">
+    <p class="eyebrow">START YOUR REQUEST</p>
+    <h2>Book an Appointment</h2>
+    <p>Submitting this form is a request, not an automatic appointment. Pink Cindy Tattoo will review and approve the request first.</p>
+  </div>
+  <form id="booking-form" class="booking-form">
+    <div class="form-grid">
+      <label>Full Name<input name="full_name" required></label>
+      <label>Email<input name="email" type="email" required></label>
+      <label>Phone / WhatsApp<input name="phone" required></label>
+      <label>Preferred Contact
+        <select name="contact_method" required>
+          <option>WhatsApp</option><option>Signal</option><option>Email</option><option>Phone</option>
+        </select>
+      </label>
+      <label>Tattoo Style<select name="style" id="booking-style" required></select></label>
+      <label>Body Placement<input name="placement" placeholder="e.g. forearm, back, chest"></label>
+      <label>Approximate Size<input name="size" placeholder="e.g. 4 inches"></label>
+      <label>Color Preference<select name="color_preference"><option>Black & Grey</option><option>Color</option><option>Not Sure</option></select></label>
+      <label>Budget<input name="budget" placeholder="$"></label>
+      <label>Preferred Date<input name="preferred_date" type="date"></label>
+      <label>Preferred Time<input name="preferred_time" type="time"></label>
+      <label>Location
+        <select name="location_type" id="location-type"><option>Studio/meeting location</option><option>Home Service</option></select>
+      </label>
+      <label class="full" id="home-address-wrap" hidden>Home-Service Address<textarea name="home_service_address"></textarea></label>
+      <label class="full">Tattoo Description<textarea name="tattoo_description" required placeholder="Tell us about the tattoo you want..."></textarea></label>
+      <label class="full">Reference Image URL (optional)<input name="reference_image_url" placeholder="You can add an image link for now"></label>
+    </div>
+    <div class="booking-policy">
+      <strong>Before submitting:</strong> A 70% advance payment is required to secure a standard appointment after approval. Home-service requests require 50% of the tattoo price plus the $300 travel/service fee before travel is arranged. Payment is handled outside this website using the payment instructions provided after approval.
+    </div>
+    <button class="btn btn-primary" type="submit">Submit Booking Request</button>
+    <p id="form-message" class="form-message"></p>
+  </form>
+</section>
+
+<section id="policies" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">IMPORTANT INFORMATION</p>
+    <h2>Booking Policies</h2>
+  </div>
+  <div class="policy-grid">
+    <article><h3>Confirmation</h3><p>An appointment is not confirmed until the required payment has been received and the request has been approved.</p></article>
+    <article><h3>Cancellation</h3><p>Please provide at least 48 hours' notice. Late cancellations or missed appointments may result in the deposit being forfeited.</p></article>
+    <article><h3>Refunds</h3><p>Reservation payments are generally non-refundable once confirmed, except where Pink Cindy Tattoo agrees otherwise.</p></article>
+    <article><h3>Custom Designs</h3><p>Provide your idea, size, placement, style and references. Additional design fees may apply depending on complexity.</p></article>
+  </div>
+</section>
+
+<section id="contact" class="section contact-section">
+  <div>
+    <p class="eyebrow">GET IN TOUCH</p>
+    <h2>Ready to turn your idea into ink?</h2>
+    <p>All appointments are by appointment only. Reach out or submit a booking request.</p>
+  </div>
+  <div class="contact-actions">
+    <a class="btn btn-primary" href="https://wa.me/17423808100" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn btn-outline-dark" href="https://www.tiktok.com/@pinkxytattoo" target="_blank" rel="noopener">TikTok</a>
+  </div>
+  <div class="contact-details">
+    <span>WhatsApp: +1 742 380 8100</span>
+    <span>Signal: +1 732 925 9624</span>
+    <span>USA — By Appointment</span>
+    <span>Mon–Sat: 8:00 AM – 7:00 PM</span>
+  </div>
+</section>
+</main>
+
+<footer>
+  <img src="assets/pink-cindy-logo.png" alt="">
+  <p>© <span id="year"></span> Pink Cindy Tattoo. Ink Your Story. Wear Your Meaning.</p>
+  <a href="admin.html">Admin</a>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+</body>
+</html>
